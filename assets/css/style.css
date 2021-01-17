@@ -1,0 +1,113 @@
+
+
+@font-face {
+    font-family: 'domotika_trialextralight';
+    src: url('../fonts/domotika-trial.extralight-webfont.woff2') format('woff2'),
+         url('../fonts/domotika-trial.extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #2C2F33;
+    overflow: hidden;
+}
+
+.box {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .projects {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#projects {
+    display: none;
+}
+
+  button:focus {
+    outline:none;
+}
+
+.title {
+    text-align: center;
+    font-family: 'domotika_trialextralight';
+    color : #fff;
+    font-size: 45px;
+    margin: 0px 0px;
+    animation:fadein 0.8s ease-out;
+	animation-fill-mode: forwards;
+
+}
+
+.link {
+	line-height: 25px;
+	margin: 0;
+	color: #7289DA;
+}
+.remove {
+	font-family: 'Roboto Mono';
+    font-size: 16px;
+	color:#FFFFFF;
+	background:none;
+    border:none;
+    border-color: #2C2F33;
+	box-shadow: none;
+}
+.back{
+    cursor: pointer;
+}
+.back:hover{
+color : #FFFFFF;
+}
+.link:hover {
+    cursor: pointer;
+    color: #7289DA;
+}
+#line {
+    line-height: 30px;
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+	color:#FFFFFF;
+    margin: 20px 0;
+    animation:fadein 0.8s ease-in-out;
+	animation-fill-mode: forwards;
+    text-align: center;
+}
+
+.step {
+    line-height: 5px;
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    margin: 0 0;
+    padding-right: 14px;
+    animation:fadein 0.8s ease-in-out;
+	animation-fill-mode: forwards;
+    text-align: center;
+}
+
+.letterpress {
+    background: rgb(190, 190, 190);
+    font-family: 'Roboto Mono';
+    color: rgb(30, 31, 32);
+    -webkit-transition: color 1s; 
+    transition: color 1s;
+    -webkit-transition: background 0.5s; 
+    transition: background 0.5s
+ }
+ p.letterpress:hover {
+    background: rgb(84, 87, 88);
+    font-family: 'Roboto Mono';
+    color: #FFFFFF;
+ }
+ 
+/* Animations */
+@keyframes fadein {
+0% {transform: translate(0, 4.5em); opacity: 0;}
+100% {transform: translate(0, 0); opacity: 1;}
+}

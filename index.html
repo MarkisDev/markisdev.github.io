@@ -1,0 +1,60 @@
+<html>
+<header>
+    <title>Markis - Home</title>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#7289DA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Markis - Aspire ; Focus ; Achieve" />
+    <meta property="og:description" content="A minimalistic website of a developer." />
+    <meta content="/assets/img/avatar.png" property="og:image" />
+    <meta name="description" content="A minimalistic website of a developer." />
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
+<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet" />
+    <script src="assets/js/index.js"></script>
+</header>
+
+<body>
+    <div id="box" class="box">
+        <h1 class="title">Markis</h1>
+        <p id="line">
+            <span style="font-size:15px; color:#99AAB5;">&lt;</span>
+            <span class="txt-rotate" data-period="2000" data-rotate='[ "Developer.", "Designer.", "Anonymous.", "Eccentric.", "Savage.", "Stupid asf."]'></span>
+            <span style="font-size:15px; color:#99AAB5;">/&gt;</span>
+        </p>
+        <p class="step"style="text-align:center;">
+            <button onclick="redirect('https://github.com/MarkisDev');" class="link remove">github</button>
+            <span style="color:#99AAB5;">;</span>
+            <button onclick="switch_projects();" class="link remove">projects</button>
+            <span style="color:#99AAB5;">;</span>
+            <button onclick="redirect('https://discord.io/dev');" class="link remove">discordapp</button>
+            <span style="color:#99AAB5;">;</span>
+
+        </p>
+    </div>
+
+    <div id="projects" class="projects">
+        <h1 onclick="switch_home();" class="title back">
+            <span style="font-size:41px; color: #99AAB5" ;>
+                <-</span> Projects</h1>
+        <p id="line" style="text-align: left;">
+            <button onclick="redirect('https://discordsites.net');" class="link remove">
+                <p class="letterpress">=> discordsites &nbsp;</p>
+            </button>
+            <br/>
+            <button onclick="redirect('https://u.markis.dev');" class="link remove">
+                <p class="letterpress"> => privurl &nbsp;</p>
+            </button>
+            <br/>
+            <button onclick="redirect('https://utils.markis.dev');" class="link remove">
+                <p class="letterpress"> => birthday_reminder &nbsp;</p>
+            </button>
+        </p>
+    </div>
+</body>
+<!-- Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. Based on byparallax.me -->
+
+</html>

@@ -1,0 +1,18 @@
+services:
+  sudopath:
+    image: ghcr.io/markisdev/markisdev.github.io:latest
+    container_name: markisdev
+    build: .
+    restart: always
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    expose:
+      - "80"
+    environment:
+      - VIRTUAL_HOST=markis.dev
+    networks:
+      - markisdev-net
+networks:
+  markisdev-net:
+    name: markisdev-net
+    driver: bridge
